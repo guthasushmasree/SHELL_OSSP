@@ -9,8 +9,8 @@ pid=fork();
 if(pid==0){
 printf("\nChild Process\n");
 printf("PID: %d\n",getpid());
-printf("PPID: %d,getppid());
-printf("State: Running\n);
+printf("PPID: %d\n",getppid());
+printf("State: Running\n");
 }
 else if(pid>0)
 {
