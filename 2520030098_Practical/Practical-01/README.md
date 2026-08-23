@@ -1,6 +1,3 @@
-OSSP (Operating Systems And Systems Programming) 
-Course code: 25CS2104E 
-
 Report explaining how the OS abstracts CPU, memory, storage, and I/O 
 devices and relationship between hardware resources and operating 
 system services. 
