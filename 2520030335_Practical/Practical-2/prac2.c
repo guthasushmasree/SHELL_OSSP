@@ -13,11 +13,11 @@ int main()
 
     if(fd1 == -1 || fd2 == -1)
     {
-        printf("Unable to open the files\n");
+        printf("Error opening files\n");
         return 1;
     }
 
-    printf("Both files opened successfully\n");
+    printf("Files successfully opened\n");
 
     while((n = read(fd1, buf, 100)) > 0)
     {
@@ -27,7 +27,7 @@ int main()
     close(fd1);
     close(fd2);
 
-    printf("Contents copied successfully\n");
+    printf("File copied successfully\n");
 
     return 0;
 }
