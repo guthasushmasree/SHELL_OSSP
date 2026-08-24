@@ -1,1 +1,32 @@
+System Calls Used:
 
+fork() – Creates a child process.
+getpid() – Returns the Process ID (PID) of the current process.
+getppid() – Returns the Parent Process ID (PPID) of the current process.
+
+Process States:
+
+1. Ready State
+The process is ready to execute and is waiting for CPU time from the scheduler.
+
+2. Running State
+The process is currently being executed by the CPU.
+
+3. Waiting State
+The process is waiting for an event or resource. For example, a process may wait for an I/O operation or another event to complete.
+
+4. Terminated State
+The process has completed its execution and exits the system.
+
+Tools Used:
+
+ps – Displays information about currently running processes and their states.
+
+top – Provides real-time information about processes and their resource usage.
+
+proc – Provides detailed information about processes through the /proc/PID/ directory.
+
+Observation:
+
+Using ps, top, and /proc, the process information and its current state can be monitored during execution. 
+The process moves through different states depending on CPU scheduling and the operation it is performing.
