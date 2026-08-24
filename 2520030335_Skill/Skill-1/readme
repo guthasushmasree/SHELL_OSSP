@@ -1,1 +1,69 @@
+Skill-01: 
+Process Management and System Calls
 
+Step 1: Install WSL
+Open PowerShell as Administrator and run:
+wsl --install
+Restart the system after installation.
+
+Step 2: Configure Ubuntu
+Open Ubuntu and create a Linux username and password.
+Enter new UNIX username: aswithapatel
+New password: ****
+Retype new password: ****
+
+Step 3: Update Ubuntu
+sudo apt update
+
+Step 4: Install GCC
+sudo apt install gcc
+gcc --version
+
+Step 5: Create a C Program
+Create the program using nano:
+nano skill01.c
+The program uses fork() to create a child process, execl() to execute the ls command, and wait() for the parent to wait for the child.
+
+Step 6: Compile and Run
+gcc skill01.c -o skill01
+./skill01
+
+What Was Achieved?
+
+Linux Environment Setup – Set up Ubuntu using WSL.
+GCC Configuration – Installed GCC for compiling C programs.
+Process Abstraction – Understood how the OS manages processes.
+fork() – Created a child process from the parent.
+exec() Family – Used execl() to execute another program.
+Parent-Child Relationship – Used getpid(), getppid(), and wait().
+Process Tree – Used pstree -p to view the process hierarchy.
+System Call Tracing – Used strace to observe system calls.
+
+Topics Covered: -
+
+1. Process Abstraction
+A process is a program in execution managed by the operating system with its own PID and resources.
+
+2. fork() System Call
+fork() creates a child process.
+0 → Child
+Positive → Parent
+Negative → Failure
+
+3. exec() Family
+The exec() family replaces the current process with another program. This program uses execl().
+
+4. Parent-Child Relationship
+The child gets its own PID, while getppid() gives the parent's PID. The parent uses wait() to wait for the child.
+
+5. Process Tree
+The process hierarchy can be viewed using:
+pstree -p
+
+6. System Call Tracing
+System calls can be observed using:
+
+strace -f ./skill01
+
+Conclusion
+This practical demonstrated process creation using fork(), program execution using execl(), parent-child relationships, process hierarchy, and system call tracing in Linux.
