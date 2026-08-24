@@ -1,26 +1,29 @@
-Theory part:
-Report explaining how the OS abstracts CPU, memory, storage, and I/O devices and relationship between hardware resources and operating system services.
+Report: Operating System Abstraction and Hardware Resources
+uname : Displays basic information about the Linux operating system, kernel, and system architecture.
+lscpu: Provides details about the CPU, including cores, threads, architecture, and processing information.
+lsblk: Shows the connected storage devices, disks, and their partitions.
+ps: Displays the currently running processes along with their process IDs (PIDs).
+top: Shows running processes and provides real-time information about CPU and memory usage.
+CPU Abstraction
 
-uname -a: Displays information about the Linux operating system and kernel.
+The operating system manages the CPU by allocating CPU time and scheduling different processes to run efficiently.
 
-lscpu: Displays information about the CPU, cores, threads, and architecture.
+Memory Abstraction
 
-lsblk: Displays connected storage devices and their partitions.
+The OS manages the computer's memory by allocating memory to programs when required and releasing it when it is no longer needed.
 
-ps: Displays currently running processes and their PIDs.
+Storage Abstraction
 
-top: Shows running processes and real-time CPU and memory usage.
+The OS manages storage devices and provides an easy way to access data through files, folders, and file systems.
 
-CPU Abstraction: The OS manages CPU time and schedules processes.
+I/O Abstraction
 
-Memory Abstraction: The OS allocates and manages memory for running processes.
+The OS controls input and output devices such as keyboards, printers, and disks using device drivers.
 
-Storage Abstraction: The OS manages storage through files, directories, and file systems.
+Overall Abstraction
 
-I/O Abstraction: The OS manages I/O devices using device drivers.
+The operating system acts as a middle layer between applications and hardware, allowing programs to use hardware resources without directly controlling them.
 
-Overall Abstraction: The OS acts as a layer between applications and hardware.
+Relationship Between Hardware and OS
 
-Relationship: The OS manages hardware like CPU, memory, storage, and I/O devices and helps applications use them easily and safely.
-
-
+The OS manages important hardware resources such as the CPU, memory, storage, and I/O devices. It provides services that allow applications to use these resources efficiently, safely, and easily.
