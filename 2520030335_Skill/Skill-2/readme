@@ -1,1 +1,39 @@
+Interactive Main Loop
 
+1. Create Main Loop
+Use a while loop to continuously accept commands from the user. The loop continues until the user enters the exit command.
+
+2. Display Prompt
+Display a prompt before every new command to show that the shell is ready for input.
+Use:
+Enter a Command:
+
+3. Read User Input
+Use the scanf() function to read the command entered by the user. Store the command in the buf[100] input buffer.
+
+4. Handle Exit Conditions
+Check whether the entered command is exit. If the command is exit, display "Exiting shell..." and terminate the loop.
+
+5. Control Flow
+Follow the sequence:
+Display Prompt → Read Command → Check Exit → Display Command → Repeat
+
+6. Testing
+Test the loop using commands such as ls, pwd, hello, and process. Also test the exit command to verify proper termination.
+
+Keyboard Input and Command Handling: -
+
+1. Capture Keyboard Input
+Use scanf() to capture the command entered through the keyboard and store it in the input buffer.
+
+2. Manage Input Buffer
+Use the buf[100] character array to temporarily store the entered command. The characters are processed until the end of the string.
+
+3. Process Command
+Calculate the length of the entered command and use the write() system call to display the command.
+
+4. Multi-Character Commands
+The program supports commands containing multiple characters, such as hello, welcome, and process.
+
+5. User Interaction Testing
+Test different commands and verify that the entered command is displayed correctly. Test the exit command to ensure that the program terminates properly.
