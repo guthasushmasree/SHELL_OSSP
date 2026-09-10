@@ -1,4 +1,5 @@
 #include<unistd.h>
+#include<stdio.h>
 int main()
 {
 int fd[2];
@@ -14,6 +15,6 @@ if(pid==0)
 {
 close(fd[1]);
 dup2(fd[0],0);
-execlp("grep","grep","-v",".c",NULL);
+execlp("grep","grep",".c",NULL);
 }
 }
